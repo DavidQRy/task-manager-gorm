@@ -1,0 +1,14 @@
+services:
+  auth-ms-db:
+    container_name: task-manager-gorm
+    image: postgres:12-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=task-manager-gorm
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    ports:
+      - 5433:5432
+volumes:
+  postgres:

@@ -30,3 +30,8 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# logs and dev
+/tmp/
+# database
+/postgres/
